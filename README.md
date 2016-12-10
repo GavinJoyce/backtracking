@@ -1,52 +1,15 @@
 # backtracking
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This ember app contains example of some [Backtracking re-rendering exceptions](https://github.com/emberjs/ember.js/issues/13948) that you might come across in your app.
 
-## Prerequisites
+So far it includes:
 
-You will need the following things properly installed on your computer.
+ * [Modifying an already rendered property in a component lifecycle hook](https://github.com/GavinJoyce/backtracking/pull/1)
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+I'll add more cases as I come across them in my own app. Please send a PR if you have additional cases.
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd backtracking`
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
+Ping me [@gavinjoyce](https://twitter.com/gavinjoyce) if you have any questions.
 
 ### Building
 
 * `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
