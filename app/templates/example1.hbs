@@ -1,0 +1,26 @@
+<div class="explain">
+  <p>
+    You'll see a "Assertion Failed: You modified model.name twice on [object Object] in a single render. This was unreliable and slow in Ember 1.x and is no longer supported. See https://github.com/emberjs/ember.js/issues/13948 for more details." in the console.
+  </p>
+
+  <p>
+    To avoid this error, don't modify any properties that have already been rendered in parent templates.
+  </p>
+</div>
+
+<div class="explain">
+  Ask yourself why you are using component lifecycle hooks to modify non-local state. Presumably, something caused the component to be rendered. You should modify the state at that point instead (possibly an action).
+</div>
+
+hi {{model.name}}
+
+<hr />
+
+
+<button {{action 'toggleComponent'}}>Toggle Component</button>
+
+{{#if showComponent}}
+  {{component-that-changes-name-on-init person=model}}
+{{else}}
+  Press the "Toggle Component" button to trigger the error (look in the console)
+{{/if}}
