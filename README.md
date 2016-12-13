@@ -5,6 +5,7 @@ This ember app contains example of some [Backtracking re-rendering exceptions](h
 So far it includes:
 
  * [Modifying an already rendered property in a component lifecycle hook](https://github.com/GavinJoyce/backtracking/pull/1)
+ * [Calling a `set` within a `get`](https://github.com/GavinJoyce/backtracking/pull/5)
 
 I'll add more cases as I come across them in my own app. Please send a PR if you have additional cases.
 
