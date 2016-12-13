@@ -1,0 +1,13 @@
+<div class="explain">
+  <p>
+    You'll see "Assertion Failed: You modified latestCount twice on &lt;backtracking@controller:example3::ember371&rt; in a single render. This was unreliable and slow in Ember 1.x and is no longer supported. See https://github.com/emberjs/ember.js/issues/13948 for more details." in the console
+  </p>
+
+  <p>
+    To avoid this error, don't emit actions on component init that mutate already rendered state
+  </p>
+</div>
+
+<h1>The latest count is {{latestCount}}</h1>
+
+{{component-which-emits-an-action-on-init onCountChange=(action 'countChanged')}}
