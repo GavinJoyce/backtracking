@@ -1,0 +1,12 @@
+
+hi {{person.name}}
+
+<hr />
+
+<button {{action 'toggleComponent'}}>Toggle Component</button>
+
+{{#if showComponent}}
+  {{component-that-changes-name-on-init person=person}}
+{{else}}
+  Press the "Toggle Component" button to trigger the error (look in the console)
+{{/if}}

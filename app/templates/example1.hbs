@@ -12,10 +12,13 @@
   Ask yourself why you are using component lifecycle hooks to modify non-local state. Presumably, something caused the component to be rendered. You should modify the state at that point instead (possibly an action).
 </div>
 
-hi {{model.name}}
+
+
+<strong>Here's where we render the value:</strong> hi {{model.name}}
 
 <hr />
 
+<h3>Case 1: In a route template</h3>
 
 <button {{action 'toggleComponent'}}>Toggle Component</button>
 
@@ -24,3 +27,8 @@ hi {{model.name}}
 {{else}}
   Press the "Toggle Component" button to trigger the error (look in the console)
 {{/if}}
+
+<hr />
+
+<h3>Case 2: In a component template</h3>
+{{component-that-wraps-the-component-that-changes-name-on-init person=model}}
