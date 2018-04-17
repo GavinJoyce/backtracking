@@ -1,0 +1,9 @@
+<label for="backtracking-checkbox">
+  Tick the box to trigger the backtracking re-render error
+</label>
+<input
+ id="backtracking-checkbox"
+ type="checkbox"
+ disabled={{propSetOnChange}}
+ onblur={{action (mut propSetOnBlur) true}}
+ onchange={{action "toggleProp"}}/>

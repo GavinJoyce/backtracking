@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('example3');
   this.route('example4');
   this.route('example5');
+  this.route('example6');
 });
 
 export default Router;
