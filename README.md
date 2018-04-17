@@ -7,6 +7,7 @@ So far it includes:
  * [Modifying an already rendered property in a component lifecycle hook](https://github.com/GavinJoyce/backtracking/pull/1)
  * [Calling a `set` within a `get`](https://github.com/GavinJoyce/backtracking/pull/5)
  * [Emitting an action on component init](https://github.com/GavinJoyce/backtracking/pull/6)
+ * [Setting a className bound property through blur events](https://github.com/GavinJoyce/backtracking/pull/13)
 
 I'll add more cases as I come across them in my own app. Please send a PR if you have additional cases.
 
